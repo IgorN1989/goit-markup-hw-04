@@ -114,6 +114,7 @@ img {
 
 .nav-list {
   display: flex;
+  align-items: center;
 }
 
 .nav-list .current {
@@ -160,11 +161,12 @@ img {
 }
 
 .contacts-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: inherit;
+  color: var(--primary-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -178,17 +180,7 @@ img {
 .contacts-mail,
 .contacts-tel {
   margin-right: 10px;
-  fill: var(--primary-text-color)
-}
-
-.contacts-mail {
-  width: 16px;
-  height: 12px;
-}
-
-.contacts-tel {
-  width: 10px;
-  height: 16px;
+  fill: currentColor;
 }
 
 /* ========== Main ========== */
@@ -301,8 +293,6 @@ img {
 .features-icon {
   display: block;
   content: '';
-  width: 270px;
-  height: 120px;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
@@ -383,6 +373,39 @@ img {
   font-weight: 500;
 }
 
+.teammate-position {
+  margin-bottom: 16px;
+}
+
+/* Socials */
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
 /* Clients */
 
 .clients {
@@ -416,8 +439,6 @@ img {
 }
 
 .clients-logo {
-  width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 
@@ -425,6 +446,9 @@ img {
 /* ========== Footer ========== */
 
 .footer {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-right: 0px;
