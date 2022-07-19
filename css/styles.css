@@ -51,20 +51,9 @@ img {
 /* ========== Header ========== */
 
 .header {
-  max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   border-bottom: 1px solid #ececec;
-}
-
-.header,
-.hero,
-.section,
-.footer {
-  max-width: 1600px;
-  min-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .container {
@@ -136,14 +125,14 @@ img {
   letter-spacing: 0.02em;
 }
 
-.current::after {
+/* .current::after {
   content: '';
   display: block;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color)
-}
+} */
 
 .nav-link:hover,
 .nav-link:focus {
@@ -188,6 +177,10 @@ img {
 /* Hero */
 
 .hero {
+  min-width: 1200px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -248,6 +241,7 @@ img {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section-title {
@@ -277,6 +271,10 @@ img {
 }
 
 /* Features */
+
+.features {
+  padding-bottom: 0;
+}
 
 .features-list {
   display: flex;
@@ -319,10 +317,6 @@ img {
 
 /* Specifications */
 
-.specifications {
-  padding-bottom: 94px;
-}
-
 .specifications-list {
   display: flex;
   flex-wrap: wrap;
@@ -337,7 +331,6 @@ img {
 
 .team {
   background-color: var(--secondary-background-color);
-  padding-bottom: 94px;
 }
 
 .team-list {
@@ -400,6 +393,7 @@ img {
 .socials-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  outline: none;
 }
 
 .socials-icon {
@@ -407,10 +401,6 @@ img {
 }
 
 /* Clients */
-
-.clients {
-    padding-bottom: 94px;
-}
 
 .clients-list {
   display: flex;
@@ -420,13 +410,11 @@ img {
 }
 
 .clients-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
@@ -436,6 +424,7 @@ img {
 .clients-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+  outline: none;
 }
 
 .clients-logo {
@@ -458,10 +447,10 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
-  min-width: 231px;
   margin-right: 70px;
 }
 
@@ -497,12 +486,6 @@ img {
   /* на макеті не зазначено на який колір повині змінюватися контакти */
 }
 
-.footer-socials {
-  height: 80px;
-  padding-top: 12px;
-  /* Кастиль */
-}
-
 .socials-title {
   margin-bottom: 20px;
   color: var(--primary-white-color);
@@ -516,17 +499,14 @@ img {
   background-color: rgba(255, 255, 255, 0.1);;
 }
 
-.footer-socials .socials-link:hover {
+.footer-socials .socials-link:hover,
+.footer-socials .socials-link:focus {
   background-color: var(--accent-color);
 }
 
 /* ======================================== */
 /*                 Portfolio                */
 /* ======================================== */
-
-.portfolio {
-  padding-bottom: 94px;
-}
 
 /* Filter */
 
@@ -562,6 +542,7 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
 
 /* Examples */
@@ -584,6 +565,7 @@ img {
 .example-link:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .example-description {
